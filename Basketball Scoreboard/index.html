@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="section_scoreboard">
+      <div class="scoreboard_component">
+        <div class="score_wrapper">
+          <h1>Home</h1>
+          <div class="score">
+            <h2 id="home-score">0</h2>
+          </div>
+          <div class="button-group">
+            <button onclick="increment(homeEl, 1)">+1</button>
+            <button onclick="increment(homeEl, 2)">+2</button>
+            <button onclick="increment(homeEl, 3)">+3</button>
+          </div>
+        </div>
+        <div class="score_wrapper">
+          <h1>Guest</h1>
+          <div class="score">
+            <h2 id="guest-score">0</h2>
+          </div>
+          <div class="button-group">
+            <button onclick="increment(guestEl, 1)">+1</button>
+            <button onclick="increment(guestEl, 2)">+2</button>
+            <button onclick="increment(guestEl, 3)">+3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
